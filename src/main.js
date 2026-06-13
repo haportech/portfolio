@@ -104,6 +104,13 @@ const projects = [
     tech: ['Minecraft Forge', 'Linux', 'ARM64', 'Backup Automation'],
     links: [],
   },
+  {
+    title: 'PC Part Compare',
+    tag: 'Web App',
+    desc: 'Compare computer parts side by side — specs, benchmarks, and pricing for CPUs and GPUs. Color-coded scoring highlights best value, shareable comparison URLs, and mobile-responsive card-to-table layout. Built with Next.js 16 and edge SQLite via Turso.',
+    tech: ['Next.js 16', 'Prisma 7', 'Turso', 'Tailwind CSS v4', 'Cloudflare Pages'],
+    links: [{ label: 'GitHub', url: 'https://github.com/haportech/pcpartcompare' }],
+  },
 ]
 
 const timeline = [
