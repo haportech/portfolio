@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hapor | Developer, Sysadmin & Security</title>
+  <meta name="description" content="Full-stack developer, sysadmin, and security professional based in Vientiane, Laos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#x3E;&#x5F;</text></svg>" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <span class="logo-prompt">jack@dev</span><span class="logo-path">:~/$</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle menu" title="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Canvas containers -->
+  <canvas id="three-canvas" aria-hidden="true"></canvas>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section hero-section">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="terminal-badge" aria-hidden="true">
+          <span class="terminal-dot"></span>
+          <span class="terminal-text">portfolio.sh — bash</span>
+        </div>
+        <p class="hero-greeting reveal-up">Hi, I'm</p>
+        <h1 class="hero-name reveal-up" data-delay="150">
+          <span class="name-line">Hapor</span>
+          <span class="name-line accent">HaporTech</span>
+        </h1>
+        <div class="hero-typing" aria-label="Full-stack developer, Sysadmin, Security professional">
+          <span class="typing-prefix">$ </span>
+          <span class="typing-text" id="typing-text"></span>
+          <span class="typing-cursor" aria-hidden="true">|</span>
+        </div>
+        <p class="hero-desc reveal-up" data-delay="300">
+          Architecting systems, securing infrastructure, and building full-stack solutions
+          from the heart of Southeast Asia.
+        </p>
+        <div class="hero-cta reveal-up" data-delay="450">
+          <a href="#projects" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+        <div class="hero-status reveal-up" data-delay="600">
+          <span class="status-dot"></span>
+          <span class="status-text">Available for freelance & full-time</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal-scale" data-delay="200">
+        <div class="photo-frame">
+          <div class="photo-glow"></div>
+          <img src="/face.png" alt="Jack Haporteche" class="profile-photo" width="240" height="320" />
+          <div class="photo-frame-border"></div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">6+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">Full-Stack</span>
+            <span class="stat-label">Dev & Ops</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">Sec</span>
+            <span class="stat-label">Focused</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-text">Scroll</span>
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// about.sh</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-up" data-delay="150">
+          <p>
+            I'm Hapor — a full-stack developer, sysadmin, and security practitioner
+            based in Vientiane, Laos. Also known as HaporTech or Jack.
+            I build production systems from the ground up — from real-time collaboration
+            tools and monitoring dashboards to full-stack web applications and game servers.
+          </p>
+          <p>
+            My workflow bridges development and operations: I architect Node.js backends,
+            wire up SQLite/PostgreSQL, containerize with Docker, and self-host on ARM
+            infrastructure. Security isn't an afterthought — it's built into every layer.
+          </p>
+          <p>
+            When I'm not deploying or debugging, I'm exploring distributed systems,
+            home lab automation, and the intersection of developer tooling with
+            real-world reliability.
+          </p>
+        </div>
+        <div class="about-terminal reveal-up" data-delay="300">
+          <div class="term-window">
+            <div class="term-header">
+              <span class="term-dot red"></span>
+              <span class="term-dot yellow"></span>
+              <span class="term-dot green"></span>
+              <span class="term-title">jack@dev:~$</span>
+            </div>
+            <div class="term-body">
+              <div class="term-line"><span class="prompt">jack@dev:~$</span> whoami</div>
+              <div class="term-line output">Hapor (HaporTech / Jack)</div>
+              <div class="term-line"><span class="prompt">jack@dev:~$</span> cat /etc/location</div>
+              <div class="term-line output">Vientiane, Laos 🇱🇦</div>
+              <div class="term-line"><span class="prompt">jack@dev:~$</span> systemctl status career</div>
+              <div class="term-line output">● career.service — Full-Stack Developer & Sysadmin</div>
+              <div class="term-line output">   Active: active (running) since 2018</div>
+              <div class="term-line"><span class="prompt">jack@dev:~$</span> <span class="cursor-block" aria-hidden="true">▊</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// skills.sh</span>
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="skills-filter reveal-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="devops">DevOps</button>
+        <button class="filter-btn" data-filter="security">Security</button>
+      </div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// projects.sh</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// experience.sh</span>
+        <h2 class="section-title">Timeline</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// contact.sh</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-up" data-delay="150">
+          <p class="contact-desc">
+            Open for freelance, collaborations, or just a technical chat.
+            Drop a message or find me on any platform below.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:hp@haportech.space" class="contact-link" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>hp@haportech.space</span>
+            </a>
+            <a href="https://github.com/haportech" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>github.com/haportech</span>
+            </a>
+            <a href="https://t.me/haportech" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Telegram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              <span>@haportech</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal-up" data-delay="300" id="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" class="form-input" required placeholder="Your name" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-input" required placeholder="your@email.com" autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-input form-textarea" required placeholder="Tell me about your project..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Hapor</p>
+        <p class="footer-tag">
+          <span class="footer-prompt">$</span>
+          <span class="footer-cmd">built with</span>
+          <span class="footer-heart">♥</span>
+          <span class="footer-cmd">from Vientiane</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
