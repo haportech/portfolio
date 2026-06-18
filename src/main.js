@@ -33,6 +33,13 @@ const skills = [
 
 const projects = [
   {
+    title: 'Agentic RAG Engine',
+    tag: 'AI Engine',
+    desc: 'Agentic RAG engine with a custom HNSW vector index built from scratch, Qwen-27B self-correction reasoning loop, relevance grading, and a real-time visual trace graph using Server-Sent Events (SSE). Styled with cinematic dark ambient glassmorphism.',
+    tech: ['Next.js', 'TypeScript', 'Groq Cloud', 'HNSW Graph', 'SSE Stream', 'Vanilla CSS'],
+    links: [{ label: 'GitHub', url: 'https://github.com/haportech/agentic-rag-portfolio' }],
+  },
+  {
     title: 'Token Compressor',
     tag: 'MCP Server',
     desc: 'MCP server for Hermes Agent that compresses text before it enters an LLM context window. Four strategies — auto (dedup+truncate), smart truncation at sentence boundaries, line deduplication, and JSON minification with recursive key stripping. Fully local, no API calls. 99% token savings on noisy build logs.',
