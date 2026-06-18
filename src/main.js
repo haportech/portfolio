@@ -11,6 +11,9 @@ import emailjs from '@emailjs/browser'
 const skills = [
   { name: 'JavaScript / TypeScript', category: 'frontend', icon: 'js' },
   { name: 'React', category: 'frontend', icon: 'react' },
+  { name: 'Model Context Protocol (MCP)', category: 'backend', icon: 'api' },
+  { name: 'Vector Indexing (HNSW)', category: 'backend', icon: 'db' },
+  { name: 'LLM Ingestion & RAG', category: 'backend', icon: 'node' },
   { name: 'HTML / CSS', category: 'frontend', icon: 'html' },
   { name: 'Tailwind CSS', category: 'frontend', icon: 'tailwind' },
   { name: 'Vite', category: 'frontend', icon: 'vite' },
@@ -126,6 +129,8 @@ const timeline = [
     title: 'Independent Developer & Sysadmin',
     subtitle: 'Vientiane, Laos',
     items: [
+      'Architect custom Approximate Nearest Neighbor (ANN) vector indices (HNSW) and agentic self-correction RAG loops from scratch',
+      'Build specialized Model Context Protocol (MCP) servers to optimize token context size window limits',
       'Architect and deploy full-stack web applications (Meridian, Kanvas, Hatch) with Node.js, React, and real-time capabilities',
       'Manage self-hosted infrastructure on Orange Pi Zero3: containers (SearXNG, Pi-hole, Vaultwarden, NPM), reverse proxy, and monitoring',
       'Build secure, isolated mock server environments for development testing',
@@ -164,6 +169,7 @@ function initTyping() {
   if (!el) return
   const roles = [
     'Full-stack Developer',
+    'AI Systems Architect',
     'Systems Administrator',
     'Security Engineer',
     'DevOps Practitioner',
