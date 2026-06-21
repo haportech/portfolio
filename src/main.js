@@ -36,6 +36,20 @@ const skills = [
 
 const projects = [
   {
+    title: 'Intelligent Document Processor',
+    tag: 'RAG Engine',
+    desc: 'A secure, full-stack Retrieval-Augmented Generation (RAG) system built with Next.js, Supabase, pgvector, and Groq Cloud. Features role-based access control (RBAC) filtering at the database layer to ensure data isolation and mitigates prompt injection attacks.',
+    tech: ['Next.js', 'Supabase', 'pgvector', 'Groq Cloud', 'Tailwind CSS'],
+    links: [{ label: 'GitHub', url: 'https://github.com/haportech/intelligent-doc-processor' }],
+  },
+  {
+    title: 'Stock & Crypto Tracker',
+    tag: 'Web App',
+    desc: 'Live market intelligence dashboard pulling data from CoinGecko and Yahoo Finance. Features historical line charts, dynamic price alert rules evaluated via background cron jobs, automated email notifications via Resend, and an industrial-brutalist dark UI.',
+    tech: ['Next.js', 'React', 'Recharts', 'SQLite', 'Vitest'],
+    links: [{ label: 'GitHub', url: 'https://github.com/haportech/stock-crypto-tracker' }],
+  },
+  {
     title: 'Agentic RAG Engine',
     tag: 'AI Engine',
     desc: 'Agentic RAG engine with a custom HNSW vector index built from scratch, Qwen-27B self-correction reasoning loop, relevance grading, and a real-time visual trace graph using Server-Sent Events (SSE). Styled with cinematic dark ambient glassmorphism.',
