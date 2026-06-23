@@ -36,6 +36,13 @@ const skills = [
 
 const projects = [
   {
+    title: 'Slimbox',
+    tag: 'LLM Proxy',
+    desc: 'An industrial-brutalist Next.js proxy that seamlessly compresses LLM prompts in real-time before forwarding to providers like OpenRouter. Features active token reduction via local algorithms, Headroom API integration, and SQLite analytics.',
+    tech: ['Next.js', 'React', 'Tailwind CSS', 'SQLite'],
+    links: [{ label: 'GitHub', url: 'https://github.com/haportech/Slimbox' }],
+  },
+  {
     title: 'Intelligent Document Processor',
     tag: 'RAG Engine',
     desc: 'A secure, full-stack Retrieval-Augmented Generation (RAG) system built with Next.js, Supabase, pgvector, and Groq Cloud. Features role-based access control (RBAC) filtering at the database layer to ensure data isolation and mitigates prompt injection attacks.',
