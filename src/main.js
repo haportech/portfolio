@@ -36,6 +36,13 @@ const skills = [
 
 const projects = [
   {
+    title: 'TikTok Downloader (No Watermark)',
+    tag: 'Mobile App',
+    desc: 'Cross-platform React Native (Expo) app paired with a FastAPI backend. Bypasses TikTok CDN restrictions via yt-dlp proxying to overcome HTTP 403s on mobile IPs. Features direct-to-gallery video saving, native Android cleartext configurations, and standalone APK compilation.',
+    tech: ['React Native', 'Expo', 'FastAPI', 'Python', 'yt-dlp'],
+    links: [{ label: 'GitHub', url: 'https://github.com/haportech/tiktok-downloader' }],
+  },
+  {
     title: 'Slimbox',
     tag: 'LLM Proxy',
     desc: 'An industrial-brutalist Next.js proxy that seamlessly compresses LLM prompts in real-time before forwarding to providers like OpenRouter. Features active token reduction via local algorithms, Headroom API integration, and SQLite analytics.',
