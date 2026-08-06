@@ -36,6 +36,18 @@ const skills = [
 
 const projects = [
   {
+    title: 'SupplyTrace',
+    tag: 'Security Tool',
+    desc: 'Checks a public GitHub project for unsafe software parts. It shows what needs fixing and saves the result for later.',
+    tech: ['Cloudflare Workers', 'D1', 'Queues', 'JavaScript', 'GitHub API'],
+    preview: '/supplytrace-preview.jpg',
+    previewAlt: 'SupplyTrace scan result screen',
+    links: [
+      { label: 'Live Demo', url: 'https://supplytrace.haportech-co-ltd.workers.dev' },
+      { label: 'GitHub', url: 'https://github.com/haportech/supplytrace' },
+    ],
+  },
+  {
     title: 'TikTok Downloader (No Watermark)',
     tag: 'Mobile App',
     desc: 'Cross-platform React Native (Expo) app paired with a FastAPI backend. Bypasses TikTok CDN restrictions via yt-dlp proxying to overcome HTTP 403s on mobile IPs. Features direct-to-gallery video saving, native Android cleartext configurations, and standalone APK compilation.',
@@ -333,6 +345,7 @@ function initProjects() {
 
   grid.innerHTML = projects.map(p => `
     <div class="project-card">
+      ${p.preview ? `<img src="${p.preview}" alt="${p.previewAlt}" class="project-preview" loading="lazy" width="1265" height="712" />` : ''}
       <div class="project-card-inner">
         <span class="project-tag">${p.tag}</span>
         <h3 class="project-title">${p.title}</h3>

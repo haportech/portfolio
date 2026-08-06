@@ -708,6 +708,15 @@ a:hover { color: var(--accent-hover); }
   box-shadow: var(--shadow-glow), var(--shadow-card);
 }
 
+.project-preview {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+}
+
 .project-card-inner {
   padding: 28px;
   display: flex;
