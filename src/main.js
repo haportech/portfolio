@@ -36,6 +36,18 @@ const skills = [
 
 const projects = [
   {
+    title: 'Faultline',
+    tag: 'Reliability Simulator',
+    desc: 'Faultline lets users run deterministic modeled commerce incidents, apply mitigations, and export evidence, making it easier to study failure propagation safely without claiming or relying on production telemetry.',
+    tech: ['React', 'TypeScript', 'Web Workers', 'Zustand', 'Playwright'],
+    preview: '/faultline-preview.png',
+    previewAlt: 'Faultline reliability simulator showing a modeled commerce incident and service topology',
+    links: [
+      { label: 'Live Demo', url: 'https://haportech.github.io/faultline/' },
+      { label: 'GitHub', url: 'https://github.com/haportech/faultline' },
+    ],
+  },
+  {
     title: 'SupplyTrace',
     tag: 'Security Tool',
     desc: 'Checks a public GitHub project for unsafe software parts. It shows what needs fixing and saves the result for later.',
