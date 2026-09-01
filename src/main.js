@@ -48,6 +48,13 @@ const projects = [
     ],
   },
   {
+    title: 'Tide AI',
+    tag: 'AI Workspace',
+    desc: 'Transparent AI chat workspace for Qwen3.8 27B through OrcaRouter, with streamed answers, visible provider reasoning, configurable SearXNG grounding, source cards, and browser-local conversation history.',
+    tech: ['React', 'TypeScript', 'Express', 'OrcaRouter', 'SearXNG', 'SSE'],
+    links: [],
+  },
+  {
     title: 'SupplyTrace',
     tag: 'Security Tool',
     desc: 'Checks a public GitHub project for unsafe software parts. It shows what needs fixing and saves the result for later.',
