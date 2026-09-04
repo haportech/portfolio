@@ -36,23 +36,15 @@ const skills = [
 
 const projects = [
   {
-    title: 'Faultline',
-    tag: 'Reliability Simulator',
-    desc: 'Faultline lets users run deterministic modeled commerce incidents, apply mitigations, and export evidence, making it easier to study failure propagation safely without claiming or relying on production telemetry.',
-    tech: ['React', 'TypeScript', 'Web Workers', 'Zustand', 'Playwright'],
-    preview: '/faultline-preview.png',
-    previewAlt: 'Faultline reliability simulator showing a modeled commerce incident and service topology',
+    title: 'Jack Exchange',
+    tag: 'Currency Converter',
+    desc: 'A privacy-first global currency converter with 161 searchable currencies and trusted institutional reference rates.',
+    tech: ['React', 'TypeScript', 'Motion', 'Cloudflare Workers'],
+    preview: '/jack-exchange-preview.png',
+    previewAlt: 'Jack Exchange private global currency converter',
     links: [
-      { label: 'Live Demo', url: 'https://haportech.github.io/faultline/' },
-      { label: 'GitHub', url: 'https://github.com/haportech/faultline' },
+      { label: 'Visit Website', url: 'https://exchange.haportech.space/' },
     ],
-  },
-  {
-    title: 'Tide AI',
-    tag: 'AI Workspace',
-    desc: 'Transparent AI chat workspace for Qwen3.8 27B through OrcaRouter, with streamed answers, visible provider reasoning, configurable SearXNG grounding, source cards, and browser-local conversation history.',
-    tech: ['React', 'TypeScript', 'Express', 'OrcaRouter', 'SearXNG', 'SSE'],
-    links: [],
   },
   {
     title: 'SupplyTrace',
